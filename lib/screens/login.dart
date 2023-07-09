@@ -14,7 +14,7 @@ class Login extends StatelessWidget {
           Stack(
             children: [
               Image.network(
-                "https://canopylab.com/wp-content/uploads/2023/01/Blog-Creating-multiple-choice-quizzes-with-the-CanopyLAB-Quiz-engine.jpg",
+                "https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/entertainment/celebrities/quizshutterstock_1538488850.jpg",
                 height: MediaQuery.of(context).size.height * 0.41,
                 width: double.infinity,
                 fit: BoxFit.cover,
@@ -103,15 +103,26 @@ SizedBox(width: 230,)
 
   width: 250, // <-- Your width
   height: 40, // <-- Your height
-  child: ElevatedButton(onPressed: () {}, child: Text("login",
+  child: ElevatedButton(onPressed: () {}, 
+  child: Text("login",
                         
                        style: TextStyle(color: Colors.white,fontSize: 25),
-                        )),),  SizedBox(height: 10),
+                        ),
+                        ),
+
+
+                        )
+                        ,  SizedBox(height: 10),
                         Image.network(
                           "https://png.pngtree.com/element_our/20200702/ourlarge/pngtree-flat-fingerprint-png-download-image_2286273.jpg",
                           height: 100,
                           width: 100,
                         ),
+
+
+
+
+
                         Text("use touch id",
                             style: TextStyle(color: Colors.grey)),
                         SizedBox(
@@ -140,8 +151,11 @@ SizedBox(width: 230,)
                             )
                           ],
                         )
+                   
                       ],
+
                     ),
+                    
                   )
                 ],
               )

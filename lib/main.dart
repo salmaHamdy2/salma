@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_day2/screens/login.dart';
+import 'package:login_day2/screens/opening.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const Login());
+    return MaterialApp(home: const opening());
   }
 }
