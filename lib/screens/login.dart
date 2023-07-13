@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:login_day2/screens/categories.dart';
 
 class Login extends StatelessWidget {
   const Login({super.key});
@@ -103,7 +104,18 @@ SizedBox(width: 230,)
 
   width: 250, // <-- Your width
   height: 40, // <-- Your height
-  child: ElevatedButton(onPressed: () {}, 
+  child: ElevatedButton(onPressed: () {
+
+
+     
+                          
+     Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(builder: (context) => CategorizationScreen()),
+                        (route) => false,
+                      );
+                          },
+   
   child: Text("login",
                         
                        style: TextStyle(color: Colors.white,fontSize: 25),
